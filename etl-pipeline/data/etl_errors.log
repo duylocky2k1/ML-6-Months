@@ -1,0 +1,744 @@
+2025-11-11 16:37:39 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server localhost:9000 (expected Hello or Exception, got Unknown packet)
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 105, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 28, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 428, in connect
+    return self._init_connection(host, port)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 372, in _init_connection
+    self.receive_hello()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 563, in receive_hello
+    raise errors.UnexpectedPacketFromServerError(message)
+clickhouse_driver.errors.UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server localhost:9000 (expected Hello or Exception, got Unknown packet)
+2025-11-11 16:38:33 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server localhost:9000 (expected Hello or Exception, got Unknown packet)
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 105, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 28, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 428, in connect
+    return self._init_connection(host, port)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 372, in _init_connection
+    self.receive_hello()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 563, in receive_hello
+    raise errors.UnexpectedPacketFromServerError(message)
+clickhouse_driver.errors.UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server localhost:9000 (expected Hello or Exception, got Unknown packet)
+2025-11-11 16:40:01 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server localhost:9000 (expected Hello or Exception, got Unknown packet)
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 105, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 28, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 428, in connect
+    return self._init_connection(host, port)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 372, in _init_connection
+    self.receive_hello()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 563, in receive_hello
+    raise errors.UnexpectedPacketFromServerError(message)
+clickhouse_driver.errors.UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server localhost:9000 (expected Hello or Exception, got Unknown packet)
+2025-11-11 16:40:10 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: NetworkError: Code: 210. Connection refused (localhost:9440)
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 112, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 35, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 449, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:9440)
+2025-11-11 16:49:11 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: NetworkError: Code: 210. Connection refused (localhost:9440)
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 112, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 35, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 449, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:9440)
+2025-11-11 16:49:40 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: NetworkError: Code: 210. Connection refused (localhost:9440)
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 112, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 35, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 449, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:9440)
+2025-11-11 16:49:45 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: NetworkError: Code: 210. Connection refused (localhost:9000)
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 112, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 35, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 449, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:9000)
+2025-11-11 16:51:02 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: ServerException: Code: 516.
+DB::Exception: default: Authentication failed: password is incorrect, or there is no user with such name.
+
+If you have installed ClickHouse and forgot password you can reset it in the configuration file.
+The password for default user is typically located at /etc/clickhouse-server/users.d/default-password.xml
+and deleting this file will reset the password.
+See also /etc/clickhouse-server/users.xml on the server where ClickHouse is installed.
+
+. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000d17d45b
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x0000000007db1dec
+2. DB::AccessControl::authenticate(DB::Credentials const&, Poco::Net::IPAddress const&, String const&) const @ 0x000000001013d6d8
+3. DB::Session::authenticate(DB::Credentials const&, Poco::Net::SocketAddress const&) @ 0x0000000011160f44
+4. DB::TCPHandler::receiveHello() @ 0x00000000125490cf
+5. DB::TCPHandler::runImpl() @ 0x000000001253d75f
+6. DB::TCPHandler::run() @ 0x00000000125599f8
+7. Poco::Net::TCPServerConnection::start() @ 0x000000001533c547
+8. Poco::Net::TCPServerDispatcher::run() @ 0x000000001533c9d9
+9. Poco::PooledThread::run() @ 0x0000000015309981
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000015307f3d
+11. ? @ 0x00007f29ea618609
+12. ? @ 0x00007f29ea53d353
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 112, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 35, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 428, in connect
+    return self._init_connection(host, port)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 372, in _init_connection
+    self.receive_hello()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 557, in receive_hello
+    raise self.receive_exception()
+clickhouse_driver.errors.ServerException: Code: 516.
+DB::Exception: default: Authentication failed: password is incorrect, or there is no user with such name.
+
+If you have installed ClickHouse and forgot password you can reset it in the configuration file.
+The password for default user is typically located at /etc/clickhouse-server/users.d/default-password.xml
+and deleting this file will reset the password.
+See also /etc/clickhouse-server/users.xml on the server where ClickHouse is installed.
+
+. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000d17d45b
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x0000000007db1dec
+2. DB::AccessControl::authenticate(DB::Credentials const&, Poco::Net::IPAddress const&, String const&) const @ 0x000000001013d6d8
+3. DB::Session::authenticate(DB::Credentials const&, Poco::Net::SocketAddress const&) @ 0x0000000011160f44
+4. DB::TCPHandler::receiveHello() @ 0x00000000125490cf
+5. DB::TCPHandler::runImpl() @ 0x000000001253d75f
+6. DB::TCPHandler::run() @ 0x00000000125599f8
+7. Poco::Net::TCPServerConnection::start() @ 0x000000001533c547
+8. Poco::Net::TCPServerDispatcher::run() @ 0x000000001533c9d9
+9. Poco::PooledThread::run() @ 0x0000000015309981
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000015307f3d
+11. ? @ 0x00007f29ea618609
+12. ? @ 0x00007f29ea53d353
+
+2025-11-11 17:41:35 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: NetworkError: Code: 210. Connection refused (localhost:9000)
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 113, in run_etl
+    ensure_table()
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 36, in ensure_table
+    client.execute(f"""
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 278, in force_connect
+    self.connect()
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 449, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:9000)
+2025-11-12 11:18:20 | decorators | ERROR | load_batch failed after 3 attempts: Parameters are expected in dict form
+2025-11-12 11:18:20 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: ValueError: Parameters are expected in dict form
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 128, in run_etl
+    load_batch(records, batch_size)
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 100, in load_batch
+    client.execute_iter(
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 457, in execute_iter
+    rv = self.iter_process_ordinary_query(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 589, in iter_process_ordinary_query
+    query = self.substitute_params(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 787, in substitute_params
+    raise ValueError('Parameters are expected in dict form')
+ValueError: Parameters are expected in dict form
+2025-11-12 14:02:57 | decorators | ERROR | load_batch failed after 3 attempts: Parameters are expected in dict form
+2025-11-12 14:02:57 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: ValueError: Parameters are expected in dict form
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 128, in run_etl
+    load_batch(records, batch_size)
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 100, in load_batch
+    client.execute_iter(
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 457, in execute_iter
+    rv = self.iter_process_ordinary_query(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 589, in iter_process_ordinary_query
+    query = self.substitute_params(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 787, in substitute_params
+    raise ValueError('Parameters are expected in dict form')
+ValueError: Parameters are expected in dict form
+2025-11-12 14:03:08 | decorators | ERROR | load_batch failed after 3 attempts: Parameters are expected in dict form
+2025-11-12 14:03:08 | decorators | ERROR | ETL JOB FAILED: run_etl | Error: ValueError: Parameters are expected in dict form
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 128, in run_etl
+    load_batch(records, batch_size)
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 100, in load_batch
+    client.execute_iter(
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 457, in execute_iter
+    rv = self.iter_process_ordinary_query(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 589, in iter_process_ordinary_query
+    query = self.substitute_params(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 787, in substitute_params
+    raise ValueError('Parameters are expected in dict form')
+ValueError: Parameters are expected in dict form
+2025-11-12 14:21:13 | decorators | ERROR | load_batch_2 failed after 3 attempts: 'date'
+2025-11-12 14:21:13 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: KeyError: 'date'
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 164, in run_etl_2
+    load_batch_2(records, batch_size)
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 114, in load_batch_2
+    client.execute(
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 376, in execute
+    rv = self.process_insert_query(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 607, in process_insert_query
+    rv = self.send_data(sample_block, data,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 658, in send_data
+    block = block_cls(sample_block.columns_with_types, chunk,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 40, in __init__
+    self.data = self.normalize(data or [])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 128, in normalize
+    self._mutate_dicts_to_rows(data)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 159, in _mutate_dicts_to_rows
+    return self._pure_mutate_dicts_to_rows(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 186, in _pure_mutate_dicts_to_rows
+    new_data.append(row[name])
+                    ~~~^^^^^^
+KeyError: 'date'
+2025-11-12 14:34:57 | decorators | ERROR | load_batch_2 failed after 3 attempts: 'date'
+2025-11-12 14:34:57 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: KeyError: 'date'
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 164, in run_etl_2
+    load_batch_2(records, batch_size)
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 114, in load_batch_2
+    client.execute(
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 376, in execute
+    rv = self.process_insert_query(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 607, in process_insert_query
+    rv = self.send_data(sample_block, data,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 658, in send_data
+    block = block_cls(sample_block.columns_with_types, chunk,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 40, in __init__
+    self.data = self.normalize(data or [])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 128, in normalize
+    self._mutate_dicts_to_rows(data)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 159, in _mutate_dicts_to_rows
+    return self._pure_mutate_dicts_to_rows(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 186, in _pure_mutate_dicts_to_rows
+    new_data.append(row[name])
+                    ~~~^^^^^^
+KeyError: 'date'
+2025-11-12 14:35:13 | decorators | ERROR | load_batch_2 failed after 3 attempts: 'date'
+2025-11-12 14:35:13 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: KeyError: 'date'
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 164, in run_etl_2
+    load_batch_2(records, batch_size)
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 114, in load_batch_2
+    client.execute(
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 376, in execute
+    rv = self.process_insert_query(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 607, in process_insert_query
+    rv = self.send_data(sample_block, data,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 658, in send_data
+    block = block_cls(sample_block.columns_with_types, chunk,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 40, in __init__
+    self.data = self.normalize(data or [])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 128, in normalize
+    self._mutate_dicts_to_rows(data)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 159, in _mutate_dicts_to_rows
+    return self._pure_mutate_dicts_to_rows(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/block.py", line 186, in _pure_mutate_dicts_to_rows
+    new_data.append(row[name])
+                    ~~~^^^^^^
+KeyError: 'date'
+2025-11-12 14:35:23 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: AttributeError: 'DataFrame' object has no attribute 'show'
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 163, in run_etl_2
+    df.show(5)
+    ^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/pandas/core/generic.py", line 6321, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'show'
+2025-11-12 14:35:35 | decorators | ERROR | load_batch_2 failed after 3 attempts: 'str' object has no attribute 'year'
+2025-11-12 14:35:35 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: AttributeError: 'str' object has no attribute 'year'
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 171, in run_etl_2
+    load_batch_2(records, batch_size)
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 115, in load_batch_2
+    client.execute(
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 376, in execute
+    rv = self.process_insert_query(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 607, in process_insert_query
+    rv = self.send_data(sample_block, data,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 660, in send_data
+    self.connection.send_data(block)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 720, in send_data
+    self.block_out.write(block)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/streams/native.py", line 48, in write
+    write_column(self.context, col_name, col_type, items,
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/service.py", line 167, in write_column
+    column.write_data(items, buf)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/base.py", line 145, in write_data
+    self._write_data(items, buf)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/base.py", line 148, in _write_data
+    prepared = self.prepare_items(items)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/base.py", line 137, in prepare_items
+    self.before_write_items(items, nulls_map=nulls_map)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/datecolumn.py", line 84, in before_write_items
+    item = date(item.year, item.month, item.day)
+                ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'year'
+2025-11-12 15:12:55 | decorators | ERROR | extract_api failed after 3 attempts: Expecting value: line 1 column 1 (char 0)
+2025-11-12 15:12:55 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/requests/models.py", line 976, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 159, in run_etl_2
+    df = extract_api(api_url)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 61, in extract_api
+    data = response.json()
+           ^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/requests/models.py", line 980, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-11-12 15:15:11 | decorators | ERROR | extract_api failed after 3 attempts: Expecting value: line 1 column 1 (char 0)
+2025-11-12 15:15:11 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/requests/models.py", line 976, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 159, in run_etl_2
+    df = extract_api(api_url)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 61, in extract_api
+    data = response.json()
+           ^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/requests/models.py", line 980, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-11-12 15:15:34 | decorators | ERROR | extract_api failed after 3 attempts: Expecting value: line 1 column 1 (char 0)
+2025-11-12 15:15:34 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/requests/models.py", line 976, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 159, in run_etl_2
+    df = extract_api(api_url)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 61, in extract_api
+    data = response.json()
+           ^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/requests/models.py", line 980, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-11-12 15:16:13 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: KeyError: 'Date'
+Traceback (most recent call last):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 166, in run_etl_2
+    df['Date'] = pd.to_datetime(df['Date']).dt.date
+                                ~~^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Date'
+2025-11-12 15:17:22 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: KeyError: 'Date'
+Traceback (most recent call last):
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 166, in run_etl_2
+    df['Date'] = pd.to_datetime(df['Date']).dt.date
+                                ~~^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Date'
+2025-11-12 15:18:31 | decorators | ERROR | load_batch_2 failed after 3 attempts: [<class 'decimal.ConversionSyntax'>]
+2025-11-12 15:18:31 | decorators | ERROR | ETL JOB FAILED: run_etl_2 | Error: InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+Traceback (most recent call last):
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 58, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 172, in run_etl_2
+    load_batch_2(records, batch_size)
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 17, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/decorators.py", line 34, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/mlproj/ML-6-Months/etl-pipeline/etl.py", line 115, in load_batch_2
+    client.execute(
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 376, in execute
+    rv = self.process_insert_query(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 607, in process_insert_query
+    rv = self.send_data(sample_block, data,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/client.py", line 660, in send_data
+    self.connection.send_data(block)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/connection.py", line 720, in send_data
+    self.block_out.write(block)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/streams/native.py", line 48, in write
+    write_column(self.context, col_name, col_type, items,
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/service.py", line 167, in write_column
+    column.write_data(items, buf)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/base.py", line 145, in write_data
+    self._write_data(items, buf)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/decimalcolumn.py", line 70, in _write_data
+    super(DecimalColumn, self)._write_data(items, buf)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/base.py", line 148, in _write_data
+    prepared = self.prepare_items(items)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/base.py", line 137, in prepare_items
+    self.before_write_items(items, nulls_map=nulls_map)
+  File "/home/duyhq/anaconda3/envs/ml6/lib/python3.11/site-packages/clickhouse_driver/columns/decimalcolumn.py", line 57, in before_write_items
+    items[i] = int(Decimal(str(item)) * scale)
+                   ^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]

@@ -1,0 +1,5 @@
+order_id,user_id,amount,created_at,status
+1001,501,299.99,2025-11-10 10:00:00,completed
+1002,502,49.50,2025-11-10 10:05:00,pending
+1003,abc,invalid,2025-11-10 10:10:00,cancelled
+1004,504,,2025-11-10 10:15:00,completed
